@@ -34,21 +34,17 @@
         android:layout_weight="1"
         android:padding="8dp" />
 
-    <Button
-        android:id="@+id/btnDescargarVideos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Descargar Todos los Videos"
-        android:backgroundTint="@color/orange"
-        android:textColor="@android:color/white"
-        android:layout_margin="16dp" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/black"
-        app:menu="@menu/bottom_nav_menu" />
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_gravity="bottom" />
 
 
 </LinearLayout>
