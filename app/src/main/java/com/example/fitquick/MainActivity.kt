@@ -21,15 +21,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
-
-        bottomNavigationView.setOnItemSelectedListener { item ->
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_ejercicios -> {
-                    Toast.makeText(this, "Ejercicios", Toast.LENGTH_SHORT).show()
+                    // Acción al presionar "Ejercicios"
                     true
                 }
                 R.id.nav_planes -> {
-                    Toast.makeText(this, "Planes", Toast.LENGTH_SHORT).show()
+                    // Acción al presionar "Planes"
                     true
                 }
                 else -> false
