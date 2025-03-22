@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.activity_main)
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        bottomNavigationView.setOnItemSelectedListener{ item ->
             when (item.itemId) {
                 R.id.nav_ejercicios -> {
                     // Quedarse en la misma pantalla (MainActivity)
@@ -33,6 +33,7 @@ class MainActivity : ComponentActivity() {
                 R.id.nav_planes -> {
                     // Ir a la pantalla de "PlanesActivity"
                     val intent = Intent(this, PlanesActivity::class.java)
+                    intent.putExtra("TITULO_PANTALLA", "Bienvenido a Planes")
                     startActivity(intent)
                     true
                 }

@@ -5,13 +5,12 @@
     <item
         android:id="@+id/nav_ejercicios"
         android:icon="@drawable/muscle_icon"
-        android:title="Ejercicios"
-        app:showAsAction="never"/>
+        android:title="Ejercicios" />
 
     <item
         android:id="@+id/nav_planes"
-        android:icon="@drawable/muscle_icon"
+        android:icon="@drawable/plan_icon"
         android:title="Planes"
-        app:showAsAction="never"/>
+        />
 
 </menu>
