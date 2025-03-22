@@ -1,5 +1,6 @@
 package com.example.fitquick
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -19,25 +20,30 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
-
-        bottomNavigationView.setOnItemSelectedListener { item ->
+        bottomNavigationView.setOnItemSelectedListener{ item ->
             when (item.itemId) {
                 R.id.nav_ejercicios -> {
-                    Toast.makeText(this, "Ejercicios", Toast.LENGTH_SHORT).show()
+                    // Quedarse en la misma pantalla (MainActivity)
                     true
                 }
+
                 R.id.nav_planes -> {
-                    Toast.makeText(this, "Planes", Toast.LENGTH_SHORT).show()
+                    // Ir a la pantalla de "PlanesActivity"
+                    val intent = Intent(this, PlanesActivity::class.java)
+                    intent.putExtra("TITULO_PANTALLA", "Bienvenido a Planes")
+                    startActivity(intent)
                     true
                 }
+
                 else -> false
             }
         }
 
+        }
     }
-}
 
 
 
