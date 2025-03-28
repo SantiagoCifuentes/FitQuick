@@ -34,7 +34,7 @@
         android:padding="8dp"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
 
@@ -43,9 +43,12 @@
         android:layout_width="423dp"
         android:layout_height="70dp"
         android:background="#232323"
-        app:itemHorizontalTranslationEnabled="true"
+        android:contextClickable="true"
+        android:textAlignment="center"
+        app:itemHorizontalTranslationEnabled="false"
         app:itemIconSize="40dp"
         app:itemIconTint="@color/orange"
+        app:itemTextAppearanceActiveBoldEnabled="true"
         app:itemTextColor="@color/white"
         app:labelVisibilityMode="auto"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,35 +59,35 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/abdomen"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="120dp" />
+        tools:layout_editor_absoluteY="112dp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/espalda"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="368dp" />
+        tools:layout_editor_absoluteY="389dp" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/pecho"
         tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="242dp" />
+        tools:layout_editor_absoluteY="251dp" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/piernas"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="495dp" />
+        tools:layout_editor_absoluteY="523dp" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -102,7 +105,7 @@
         android:text="Abdominales"
         android:textSize="25sp"
         tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="152dp" />
+        tools:layout_editor_absoluteY="112dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -111,7 +114,7 @@
         android:text="Pecho"
         android:textSize="25sp"
         tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="278dp" />
+        tools:layout_editor_absoluteY="251dp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -120,7 +123,7 @@
         android:text="Piernas"
         android:textSize="25sp"
         tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="527dp" />
+        tools:layout_editor_absoluteY="523dp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -128,8 +131,8 @@
         android:layout_height="wrap_content"
         android:text="Espalda"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="389dp" />
 
     <TextView
         android:id="@+id/textView10"
@@ -148,8 +151,8 @@
         android:layout_height="40dp"
         android:rotation="270"
         android:src="@android:drawable/arrow_down_float"
-        tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="152dp" />
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="146dp" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -158,7 +161,7 @@
         android:rotation="270"
         android:src="@android:drawable/arrow_down_float"
         tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteY="421dp" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -166,8 +169,8 @@
         android:layout_height="40dp"
         android:rotation="270"
         android:src="@android:drawable/arrow_down_float"
-        tools:layout_editor_absoluteX="319dp"
-        tools:layout_editor_absoluteY="519dp" />
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="557dp" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -182,37 +185,37 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="xs Ejercicios"
+        android:text="3 Ejercicios"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="184dp" />
+        tools:layout_editor_absoluteY="147dp" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="xs Ejercicios"
+        android:text="3 Ejercicios"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="310dp" />
+        tools:layout_editor_absoluteY="278dp" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="xs Ejercicios"
+        android:text="3 Ejercicios"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="430dp" />
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="421dp" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="xs Ejercicios"
+        android:text="3 Ejercicios"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="559dp" />
+        tools:layout_editor_absoluteY="557dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
