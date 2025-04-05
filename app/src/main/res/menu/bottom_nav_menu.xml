@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/nav_ejercicios"
-        android:icon="@mipmap/muscle_icon1"
+        android:icon="@drawable/muscle_vector"
         android:title="Ejercicios"
         />
 

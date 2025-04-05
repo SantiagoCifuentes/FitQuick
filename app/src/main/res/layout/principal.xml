@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Barra de arriba -->
-
-    <!-- Lista de ejercicios -->
-
-    <!-- Barra de navegación inferior -->
-
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="413dp"
