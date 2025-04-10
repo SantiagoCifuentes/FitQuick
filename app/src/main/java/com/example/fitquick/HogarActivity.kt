@@ -8,9 +8,9 @@ class HogarActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.hogar_activity) // Asegúrate de que el nombre del layout sea correcto
+        setContentView(R.layout.hogar_activity)
 
-        // Añade el fragmento HogarFragment
+
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.hogar_fragment, HogarFragment())
         transaction.commit()
