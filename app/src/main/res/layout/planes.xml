@@ -7,21 +7,22 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
-        android:layout_width="423dp"
-        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#232323"
         android:contextClickable="true"
         android:textAlignment="center"
         app:itemHorizontalTranslationEnabled="false"
-        app:itemIconSize="40dp"
-        app:itemIconTint="@color/orange"
-        app:itemTextAppearanceActiveBoldEnabled="true"
+        app:itemIconSize="24dp"
+        app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:labelVisibilityMode="auto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerEjercicios"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_nav_menu" />
 
     <TextView
@@ -41,11 +42,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="139dp"
+        android:layout_height="89dp"
         android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="-79dp" />
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textView"
