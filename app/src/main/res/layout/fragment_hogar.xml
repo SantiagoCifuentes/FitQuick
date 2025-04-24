@@ -84,14 +84,14 @@
         app:layout_constraintVertical_bias="0.689">
 
         <ImageView
-            android:id="@+id/iconOneDay"
+            android:id="@+id/iconTwoDays"
             android:layout_width="116dp"
             android:layout_height="130dp"
             android:layout_gravity="center"
             android:src="@drawable/calendar" />
 
         <TextView
-            android:id="@+id/textOneDay"
+            android:id="@+id/textTwoDays"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2 Días por semana"
@@ -113,17 +113,17 @@
         app:layout_constraintVertical_bias="0.271">
 
         <ImageView
-            android:id="@+id/iconTwoDays"
+            android:id="@+id/iconOneDay"
             android:layout_width="116dp"
             android:layout_height="130dp"
             android:layout_gravity="center"
             android:src="@drawable/calendar" />
 
         <TextView
-            android:id="@+id/textTwoDays"
+            android:id="@+id/textOneDay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1 Días por semana"
+            android:text="1 Día por semana"
             android:textColor="@color/black"
             android:textSize="16sp" />
     </LinearLayout>
