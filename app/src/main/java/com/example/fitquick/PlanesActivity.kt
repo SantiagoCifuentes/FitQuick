@@ -16,6 +16,7 @@ class PlanesActivity : AppCompatActivity() {
         setContentView(R.layout.planes) //
         val tituloPantalla = intent.getStringExtra("TITULO_PANTALLA")
         val imagenHogar: ImageView = findViewById(R.id.ImgHogar)
+        val imgHogarPesas: ImageView = findViewById(R.id.ImgHogarPesas)
         textView = findViewById(R.id.textViewPlanes)
         textView.text = "$tituloPantalla "
 
@@ -26,6 +27,10 @@ class PlanesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        imgHogarPesas.setOnClickListener {
+            val intent = Intent(this, HogarPesasActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
