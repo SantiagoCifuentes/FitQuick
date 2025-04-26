@@ -13,7 +13,7 @@ class FlexionesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flexiones_activity)
 
-        // Añade el fragmento HogarFragment
+        // Añade el fragmento EjercicioFragment
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.flexiones_fragment, EjercicioFragment())
         transaction.commit()
