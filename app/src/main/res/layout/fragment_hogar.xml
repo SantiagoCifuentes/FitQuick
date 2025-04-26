@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".HogarFragment">
 
-    <!-- Título Hogar -->
 
     <!-- Contenedor para 1 Día por semana -->
     <TextView
