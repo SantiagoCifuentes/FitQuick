@@ -13,6 +13,11 @@
         android:theme="@style/Theme.FitQuick"
         tools:targetApi="31">
         <activity
+            android:name=".HogarPesasActivity"
+            android:exported="false"
+            android:label="@string/title_activity_hogar_pesas"
+            android:theme="@style/Theme.FitQuick" />
+        <activity
             android:name=".FlexionesActivity"
             android:exported="false"
             android:label="@string/title_activity_flexiones"
