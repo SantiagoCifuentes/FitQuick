@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TableLayout
 import android.widget.TextView
+import androidx.core.content.edit
 
 
 class EjercicioFragment : Fragment() {
@@ -37,13 +38,12 @@ class EjercicioFragment : Fragment() {
             val reps = repsInput.text.toString()
 
             if (weight.isNotEmpty() && reps.isNotEmpty()) {
-                val sharedPreferences = activity?.getSharedPreferences("EjercicioFragment", Context.MODE_PRIVATE)
-                val editor = sharedPreferences?.edit()
-                editor?.putString("weight", weight)
-                editor?.putString("reps", reps)
-                editor?.apply()
+                val prefs = requireActivity().getSharedPreferences("EjercicioFragment", Context.MODE_PRIVATE)
+                prefs.edit() {
+                    putString("weight", weight)
+                    putString("reps", reps)
+                }
 
-                // Mostrar la tabla con los datos ingresados
                 weightTextView.text = weight
                 repsTextView.text = reps
                 tableLayout.visibility = View.VISIBLE
