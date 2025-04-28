@@ -64,20 +64,6 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:autoText="true"
-        android:text="Abdominales"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
-        app:layout_constraintVertical_bias="0.06" />
-
-    <TextView
         android:id="@+id/textView4"
         android:layout_width="247dp"
         android:layout_height="84dp"
@@ -179,8 +165,11 @@
         android:layout_height="wrap_content"
         android:text="Ejercicios Abdominales"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="107dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTitulo2"
+        app:layout_constraintVertical_bias="0.158" />
 
     <ImageView
         android:id="@+id/imageView19"
