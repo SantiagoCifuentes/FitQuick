@@ -1,19 +1,23 @@
 import android.content.ContentValues
 import android.content.Context
+import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.graphics.Typeface
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.fitquick.R
+import androidx.core.net.toUri
 
 class EjercicioFragment : Fragment() {
 
@@ -47,6 +51,7 @@ class EjercicioFragment : Fragment() {
         tableLayout = view.findViewById<TableLayout>(R.id.table_layout)
         val weightTextView = view.findViewById<TextView>(R.id.weight_text_view)
         val repsTextView = view.findViewById<TextView>(R.id.reps_text_view)
+        val playButton = view.findViewById<ImageButton>(R.id.btnPlay)
 
         tableLayout.visibility = View.GONE
 
@@ -68,6 +73,12 @@ class EjercicioFragment : Fragment() {
         clearButton.setOnClickListener {
             deleteAllWorkouts()  // Borrar todos los registros
             tableLayout.visibility = View.GONE
+        }
+        playButton.setOnClickListener { // muestra el video con el boton de play
+            val videoId = "M-SDCDhHv0I&ab_channel=Tºji"
+            val intent = Intent(Intent.ACTION_VIEW,
+                "https://www.youtube.com/watch?v=$videoId".toUri())
+            startActivity(intent)
         }
 
         return view
@@ -93,7 +104,7 @@ class EjercicioFragment : Fragment() {
             null,
             null,
             null,
-            null,
+            null, // parámetros en null ya que no se hace uso de funciones sql como groupbuy
             null
         )
 
