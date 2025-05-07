@@ -1,5 +1,6 @@
 package com.example.fitquick
 
+import EjercicioFragment
 import android.os.Bundle
 
 import androidx.appcompat.app.AppCompatActivity
