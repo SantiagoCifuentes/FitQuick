@@ -50,13 +50,13 @@
         android:id="@+id/btnInfo"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="204dp"
+        android:layout_marginBottom="236dp"
         android:background="@drawable/rounded_button"
         android:scaleType="centerInside"
         android:src="@android:drawable/ic_menu_info_details"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:tint="#FFFFFF" />
 
@@ -64,13 +64,13 @@
         android:id="@+id/btnPlay"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="204dp"
+        android:layout_marginBottom="236dp"
         android:background="@drawable/rounded_button"
         android:backgroundTint="#FF6F00"
         android:src="@android:drawable/ic_media_play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.961"
         app:layout_constraintStart_toStartOf="parent"
         app:tint="#FFFFFF" />
 
@@ -125,10 +125,25 @@
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="110dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#FF6F00"
+        android:text="Borrar Todo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.699" />
+
     <TableLayout
         android:id="@+id/table_layout"
-        android:layout_width="230dp"
-        android:layout_height="79dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:stretchColumns="0"
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/containerBottomButtons"
