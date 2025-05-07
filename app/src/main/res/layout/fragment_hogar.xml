@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="Hogar"
+        android:fontFamily="@font/helvetica_bold_oblique"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,6 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2 Días por semana"
+            android:fontFamily="@font/helvetica"
             android:textColor="@color/black"
             android:textSize="16sp" />
     </LinearLayout>
@@ -123,6 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1 Día por semana"
+            android:fontFamily="@font/helvetica"
             android:textColor="@color/black"
             android:textSize="16sp" />
     </LinearLayout>
