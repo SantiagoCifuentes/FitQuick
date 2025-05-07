@@ -53,31 +53,19 @@
         app:layout_constraintVertical_bias="0.882" />
 
     <TextView
-        android:id="@+id/textViewPlanes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Cargando datos..."
-        android:textSize="20sp"
+        android:id="@+id/tvSelecciona"
+        android:layout_width="290dp"
+        android:layout_height="68dp"
+        android:background="@drawable/border_black"
+        android:text="SELECCIONA"
+        android:textColor="#FFFFFF"
+        android:textSize="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
+        app:layout_constraintVertical_bias="0.141" />
+    />
 
-    <TextView
-        android:id="@+id/TextSeleccione"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#211F1F"
-        android:text="SELECCIONE"
-        android:textColor="#E7E4E4"
-        android:textColorLink="#EDE3E3"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

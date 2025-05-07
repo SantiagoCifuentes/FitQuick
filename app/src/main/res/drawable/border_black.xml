@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#000000"/> <!-- Color de fondo -->
+    <corners android:radius="50dp"/> <!-- Radio para hacer el borde ovalado -->
+</shape>
