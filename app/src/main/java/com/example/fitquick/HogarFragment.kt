@@ -15,12 +15,12 @@ class HogarFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_hogar, container, false)
 
         val iconOneDay: ImageView = view.findViewById(R.id.iconOneDay)
         iconOneDay.setOnClickListener {
-            val intent = Intent(activity, FlexionesActivity::class.java)
+            val intent = Intent(activity, HogarEjerciciosActivity::class.java)
             startActivity(intent)
         }
 

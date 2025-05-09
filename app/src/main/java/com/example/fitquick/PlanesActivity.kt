@@ -9,16 +9,14 @@ import androidx.appcompat.app.AppCompatActivity
 
 class PlanesActivity : AppCompatActivity() {
 
-    lateinit var textView: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.planes) //
-        val tituloPantalla = intent.getStringExtra("TITULO_PANTALLA")
+
         val imagenHogar: ImageView = findViewById(R.id.ImgHogar)
         val imgHogarPesas: ImageView = findViewById(R.id.ImgHogarPesas)
-        textView = findViewById(R.id.textViewPlanes)
-        textView.text = "$tituloPantalla "
 
 
 
