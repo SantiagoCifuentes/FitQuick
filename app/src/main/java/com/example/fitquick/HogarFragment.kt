@@ -20,7 +20,7 @@ class HogarFragment : Fragment() {
 
         val iconOneDay: ImageView = view.findViewById(R.id.iconOneDay)
         iconOneDay.setOnClickListener {
-            val intent = Intent(activity, FlexionesActivity::class.java)
+            val intent = Intent(activity, HogarEjerciciosActivity::class.java)
             startActivity(intent)
         }
 
