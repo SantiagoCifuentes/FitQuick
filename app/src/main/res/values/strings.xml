@@ -6,4 +6,7 @@
     <string name="title_activity_hogar">HogarActivity</string>
     <string name="title_activity_flexiones">FlexionesActivity</string>
     <string name="title_activity_hogar_pesas">HogarPesasActivity</string>
+    <string name="title_activity_pesas_eje">PesasActivityEje</string>
+    <string name="title_activity_pesas_calen">PesasCalenActivity</string>
+    <string name="title_activity_pesas">PesasActivity</string>
 </resources>
