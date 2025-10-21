@@ -18,6 +18,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.fitquick.R
 import androidx.core.net.toUri
+import kotlin.toString
 
 class EjercicioFragment : Fragment() {
 
@@ -55,27 +56,58 @@ class EjercicioFragment : Fragment() {
 
         tableLayout.visibility = View.GONE
 
-        saveButton.setOnClickListener {
-            val weight = weightInput.text.toString()
-            val reps = repsInput.text.toString()
 
-            if (weight.isNotEmpty() && reps.isNotEmpty()) {
-                insertWorkout(reps.toInt(), weight.toFloat())
 
-                weightTextView.text = weight
-                repsTextView.text = reps
+        fun validateAndSave(
+            weightInput: EditText,
+            repsInput: EditText,
+            weightTextView: TextView,
+            repsTextView: TextView
+        ) {
+            val weightText = weightInput.text.toString().trim()
+            val repsText = repsInput.text.toString().trim()
+
+            if (weightText.isEmpty() || repsText.isEmpty()) {
+                androidx.appcompat.app.AlertDialog.Builder(requireContext())
+                    .setTitle("Campos vacíos")
+                    .setMessage("Rellena ambos campos antes de guardar.")
+                    .setPositiveButton("OK", null)
+                    .show()
+                return
+            }
+
+            try {
+                val weight = weightText.toFloat()
+                val reps = repsText.toInt()
+
+                insertWorkout(reps, weight)
+
+                weightTextView.text = weightText
+                repsTextView.text = repsText
                 tableLayout.visibility = View.VISIBLE
 
-                displayWorkouts()  // Llamar a displayWorkouts para mostrar los datos guardados
+                displayWorkouts()
+            } catch (e: NumberFormatException) {
+                androidx.appcompat.app.AlertDialog.Builder(requireContext())
+                    .setTitle("Valor inválido")
+                    .setMessage("Introduce números válidos: 'etReps' enteros y 'etPeso' decimales.")
+                    .setPositiveButton("OK", null)
+                    .show()
             }
         }
+
+
+        saveButton.setOnClickListener {
+            validateAndSave(weightInput, repsInput, weightTextView, repsTextView)
+        }
+
 
         clearButton.setOnClickListener {
             deleteAllWorkouts()  // Borrar todos los registros
             tableLayout.visibility = View.GONE
         }
         playButton.setOnClickListener { // muestra el video con el boton de play
-            val videoId = "M-SDCDhHv0I&ab_channel=Tºji"
+            val videoId = "vQ7xzO5lV-E?si=Fj91M2r_AD5WY1rX"
             val intent = Intent(Intent.ACTION_VIEW,
                 "https://www.youtube.com/watch?v=$videoId".toUri())
             startActivity(intent)
